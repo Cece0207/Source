@@ -2,7 +2,7 @@
 # 1. At least 2 of the 3 subsections should have material
 # 1.1 Papers Read
 
-The Photometric LSST Astronomical Time-series Classification Challenge (PLAsTiCC): Data set 
+[The Photometric LSST Astronomical Time-series Classification Challenge (PLAsTiCC): Data set](https://arxiv.org/abs/1810.00001) 
 	This article explores how PLAsTiCC aims to tackle the categorization of massives amounts of light curves collected. The main question is “how well can we classify objects in the sky that vary in brightness from simulated LSST time-series data, with all its challenges of non-representativity?” The article continues to explain more background of how and what data will be collected. There are two types of survey methods. The first is a Deep Drilling Field (DDF) which covers small areas of the sky thus this method hopes to capture the flux of fainter objects. The second survey method, Wide-Fast-Deep (WFD), aims to do the opposite and collect data from much larger portions of the sky thus capturing and discovering more objects. This data will be represented in six different ranges of wavelength. Finally, the challenge asked participants to use a training set, that included light curves and metadata of an object, to make a system that is capable of classifying similar objects with a much larger test set.
 
 Results of the Photometric LSST Astronomical Time-series Classification Challenge 
