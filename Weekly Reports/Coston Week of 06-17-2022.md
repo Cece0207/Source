@@ -3,7 +3,7 @@
 # 1. At least 2 of the 3 subsections should have material
 
 # 1.1 Papers Read
-The PLAsTiCC Astronomy "Starter Kit” https://www.kaggle.com/code/michaelapers/the-plasticc-astronomy-starter-kit 
+[The PLAsTiCC Astronomy "Starter Kit”](https://www.kaggle.com/code/michaelapers/the-plasticc-astronomy-starter-kit) 
 This notebook on Kaggle provides a clear introduction to PLAsTiCC that was done on Kaggle. The notebook started by describing the basic
 knowledge of astrophysical phenomena that code be helpful to the average coder. This included basic information on the Large Synoptic
 Survey Telescope (LSST) which has since been renamed to Legacy Survey of Space and Time, information on light curves and their properties,
