@@ -1,7 +1,8 @@
-Coston- Week of 06/20-24/2022
-#1. At least 2 of the 3 subsections should have material
+# Coston- Week of 06/20-24/2022
 
-#1.1 Papers Read
+# 1. At least 2 of the 3 subsections should have material
+
+# 1.1 Papers Read
 [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922) 
 This article explains the various ethical problems and the cases surrounding natural language processing (NLP). The first ethical issue that 
 the scholars go on to discuss is the environmental impact NPLs have. Training these programs takes a vast amount of energy which does not 
@@ -10,7 +11,7 @@ greatly impacts what NPLs learn. For instance, a lack of diversity in the traini
 (typically minorities). Stereotypes and other forms of bias can be programmed into the NPLs. Language also changes much faster than these 
 programs can learn thus NPLs are often playing catch up. Ultimately they are massive datasets that are harmful to more marginalized groups. 
 
-#1.2 Code Written
+# 1.2 Code Written
 
       from sklearn.metrics import confusion_matrix
       #confusion_matrix ~ a matrix to evaluate the accuracy of a classification
@@ -75,25 +76,25 @@ be seen in figure 2.
                           test_target0, 
                           name_of_target = np.unique(allfeatures['(target)'])    )
 
-#1.3 Other (algorithm, discussion with experts, went to a conference)
+# 1.3 Other (algorithm, discussion with experts, went to a conference)
 
 	My one-on-one meeting with Willow was a basic introduction to neural networks. We reviewed the feedforward neural networks that she discussed
   in her presentation on transformers from last week. In addition, we talked about general neural networks, backpropagation, and activation 
   functions. We also went through Willow’s previous homework assignment to look through MNIST and how to code and run a neural network.
   This afternoon I intend to attend the journal club this afternoon. I will add the information about that later today.
 
-#2. Figures (at least 1 figure)
+# 2. Figures (at least 1 figure)
 
 
 . . .
-#3 Results (required)
+# 3 Results (required)
 
 This week gained a better grasp on machine learning techniques through the meetings of the week and the exploration of the PLAsTiCC through
 the Google collab notebook, MLPNS2021 exam.  I am now more familiar with python and how to modify the code to receive different outcomes. 
 As the week progressed, I began to learn more about how neural networks function and how to implement them. Willow introduced me to more 
 background on neural networks. I am in a better place to start coding and running simple neural networks.
 
-#4 Planning (required)
+# 4 Planning (required)
 
 For next week, I intend to work through Willow’s Google collab notebook, HW10_MNIST.ipynb, to study the components and code of the neural networks 
 and their manipulation. I plan to evaluate how changes to the neural network affect the accuracy of the program. In addition, I plan to read the 
