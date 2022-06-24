@@ -43,8 +43,8 @@ programs can learn thus NPLs are often playing catch up. Ultimately they are mas
 Upon exploring the google notebook provided the two methods that I have altered. The above code prints a percentage confusion matrix 
 rather than the numerical confusion matrix that was initially used in the notebook. In addition to changing the matrix to percentages, 
 I also changed the colorbar to go from 0.0 to 1.0. The first time I ran the function, the maximum value of the color bar was around 0.7 
-(or 70%) which was the maximum value within the confusion matrix. Thus, I changed the range to run from 0 to 1 (0% to 100%). All of this 
-can be seen in figure 1.
+(or 70%) which was the maximum value within the confusion matrix. Thus, I changed the range to run from 0 to 1 (0% to 100%). 
+All of this can be seen in figure 1.
 
 The below code has been modified to add labels on the normalized confusion matrix. To complete this challenge, I modified the parameters 
 given to the function to accept a data frame of the name of the targets which would be used as the label normalized confusion matrix. 
@@ -78,16 +78,20 @@ be seen in figure 2.
 
 # 1.3 Other (algorithm, discussion with experts, went to a conference)
 
-	My one-on-one meeting with Willow was a basic introduction to neural networks. We reviewed the feedforward neural networks that she discussed
-  in her presentation on transformers from last week. In addition, we talked about general neural networks, backpropagation, and activation 
-  functions. We also went through Willow’s previous homework assignment to look through MNIST and how to code and run a neural network.
-  This afternoon I intend to attend the journal club this afternoon. I will add the information about that later today.
+My one-on-one meeting with Willow was a basic introduction to neural networks. We reviewed the feedforward neural networks that she discussed
+in her presentation on transformers from last week. In addition, we talked about general neural networks, backpropagation, and activation 
+functions. We also went through Willow’s previous homework assignment to look through MNIST and how to code and run a neural network.
+This afternoon I intend to attend the journal club this afternoon. I will add the information about that later today.
 
 # 2. Figures (at least 1 figure)
+![Figure 1](https://user-images.githubusercontent.com/107265822/175558602-44b05bec-11d6-4027-8160-847e6c152ae7.png)
+
+![Figure 2](https://user-images.githubusercontent.com/107265822/175561780-bd06127b-a45b-42ac-865d-0b8ac6b9969a.png)
 
 
-. . .
-# 3 Results (required)
+
+# 3 Results
+ (required)
 
 This week gained a better grasp on machine learning techniques through the meetings of the week and the exploration of the PLAsTiCC through
 the Google collab notebook, MLPNS2021 exam.  I am now more familiar with python and how to modify the code to receive different outcomes. 
