@@ -95,14 +95,13 @@ Figure 2: Shows a confusion matric of the random forest based on the classificat
 
 
 # 3 Results
- (required)
 
 This week gained a better grasp on machine learning techniques through the meetings of the week and the exploration of the PLAsTiCC through
 the Google collab notebook, MLPNS2021 exam.  I am now more familiar with python and how to modify the code to receive different outcomes. 
 As the week progressed, I began to learn more about how neural networks function and how to implement them. Willow introduced me to more 
 background on neural networks. I am in a better place to start coding and running simple neural networks.
 
-# 4 Planning (required)
+# 4 Planning 
 
 For next week, I intend to work through Willow’s Google collab notebook, HW10_MNIST.ipynb, to study the components and code of the neural networks 
 and their manipulation. I plan to evaluate how changes to the neural network affect the accuracy of the program. In addition, I plan to read the 
