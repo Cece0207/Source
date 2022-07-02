@@ -1,10 +1,10 @@
-## Coston- Week of 06/27/2022-07/01/2022
+# Coston- Week of 06/27/2022-07/01/2022
 
-# 1. At least 2 of the 3 subsections should have material
+## 1. At least 2 of the 3 subsections should have material
 
-# 1.1 Papers Read
+### 1.1 Papers Read
 
-[https://arxiv.org/abs/2106.04370#:~:text=SCONE%3A%20Supernova%20Classification%20with%20a%20Convolutional%20Neural%20Network,neural%20network%20framework%20typically%20used%20for%20image%20recognition.](SCONE: Supernova Classification with a Convolutional Neural Network)
+[SCONE: Supernova Classification with a Convolutional Neural Network](https://arxiv.org/abs/2106.04370#:~:text=SCONE%3A%20Supernova%20Classification%20with%20a%20Convolutional%20Neural%20Network,neural%20network%20framework%20typically%20used%20for%20image%20recognition.)
 
 This article discusses the algorithm SCONE which is able to photometric classify supernova Ia. To accomplish this,
 the light curve data is preprocessed into heatmaps. Through Gaussian processes, these heatmaps have limited issues 
@@ -15,7 +15,7 @@ followed by fully-connected layers. After all this, the group achieved 99.93 ± 
 99.71 ± 0.2% validation accuracy, and  99.73 ±  0.26% test accuracy.
 
 
-# 1.2 Code Written
+### 1.2 Code Written
 
     model = Sequential()
     model.add(Dense(128, activation="relu", input_dim=nDim))
@@ -55,26 +55,26 @@ accuracy for a specific image. The output of the below code is seen in figure 2.
     print("The model predicted that this image is the number", num) 
     print("with a percentage of", precent, "%")
 
-# 1.3 Other (algorithm, discussion with experts, went to a conference)
+### 1.3 Other (algorithm, discussion with experts, went to a conference)
 	
   This week, for SOURCE, I presented a short 5-minute presentation on my research to my fellow 
   research assistants. Since the presentation was for an audience of various levels of background 
   in physics, I just gave a general overview and background of supernovae and neural networks.
 
-# 2. Figures (at least 1 figure)
+## 2. Figures (at least 1 figure)
 
 
 The model predicted that this image is the number 9
 with a percentage of 99.1 %
 
-# 3 Results (required)
+## 3 Results (required)
 This week gained a better grasp on neural networks and their components techniques through the 
 exploration of the MNIST through the Google collab notebook, HW10_MNIST.ipynb, 
-[https://playground.tensorflow.org](TensorFlow), and through my presentation.  I am continuing to 
+[TensorFlow](https://playground.tensorflow.org), and through my presentation.  I am continuing to 
 learn more aspects of python as I continue to alter various codes. As the week progressed, I began 
 to learn more about SCONE and how they were able to create a photometric SNe Ia classification algorithm. 
 
-# 4 Planning (required)
+## 4 Planning (required)
 For next week, I intend to work through the two Google collab notebooks that have been prepared to 
 run SCONE. I intend to run the program first with PLAsTiCC data with the hopes of achieving the same 
 results as they did in SCONE. Once that is successful, I hope to begin altering the code to not only 
