@@ -62,10 +62,16 @@ accuracy for a specific image. The output of the below code is seen in figure 2.
   in physics, I just gave a general overview and background of supernovae and neural networks.
 
 ## 2. Figures (at least 1 figure)
+![download](https://user-images.githubusercontent.com/107265822/177003416-fd839a71-e010-4abf-86be-56206d29fda2.png)
 
+Figure 1: Plot of the loss of the nueral netweork in the code above
+
+![download](https://user-images.githubusercontent.com/107265822/177003439-70e5c519-7405-4fc5-ba53-5dc60f21736e.png)
 
 The model predicted that this image is the number 9
 with a percentage of 99.1 %
+
+Firgure 2: Output of finding the accuracy for a specific image. 
 
 ## 3 Results (required)
 This week gained a better grasp on neural networks and their components techniques through the 
