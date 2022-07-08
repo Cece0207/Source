@@ -102,7 +102,19 @@ Through my weekly meeting with Dr. Fed, I learned more about convolutional neura
 ## 2. Figures (at least 1 figure)
 
 
-SN_rangeSNID730[222, 329]745[125, 229]1124[231, 351]1598[231, 351]1632[0, 121]......130639669[24, 69]130659834[60, 99]130678775[70, 117]130698059[18, 66]130755807[47, 61]
+	SN_range
+SNID	
+730	[222, 329]
+745	[125, 229]
+1124	[231, 351]
+1598	[231, 351]
+1632	[0, 121]
+...	...
+130639669	[24, 69]
+130659834	[60, 99]
+130678775	[70, 117]
+130698059	[18, 66]
+130755807	[47, 61]
 
 The above figure represents the outcome of the code seen above. The chart prints the beginning and final index of the MJD that contains the supernova. This index is found by locating where the maximum flux is. This range then helps in creating the plot of the data including the supernova data which is seen below. This range allows us the limit the data that the plot charts hence, only showing the desired data. Overall these methods help us in our future run-through of SCONE data since the SCONE heatmaps are only created at the instance of the supernova.
 
