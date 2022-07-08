@@ -102,7 +102,7 @@ Through my weekly meeting with Dr. Fed, I learned more about convolutional neura
 ## 2. Figures (at least 1 figure)
 
 
-	SN_range
+         SN_range
 SNID	
 730	[222, 329]
 745	[125, 229]
