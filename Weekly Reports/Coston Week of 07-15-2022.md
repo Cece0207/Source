@@ -68,7 +68,7 @@ No papers were read this week.
               return len(lcdata_ids), new_metadata_paths, new_lcdata_paths 
     
 Upon working through the SCONE data, I have successfully run a few parts of the code. 
-First of which is split_data_files.py. The original code can be seen by following the 
+First of which is [https://github.com/helenqu/scone/blob/main/legacy/split_data_files.py](split_data_files.py). The original code can be seen by following the 
 hyperlink while my edits are above. The main change in the code is the use of argparse. 
 Within the notebook we were not able to use the argpase functions thus we had to find 
 workarounds. Thus, we created a function instead. Along with argpase, we originally 
@@ -94,9 +94,9 @@ The output of this function can be seen in Figure 1.
                           peak_mjd_calculated.append(np.sum(mjd * snrs) / np.sum(snrs))
                       return peak_mjd_calculated
             
-The second of which is data_cuts.py. Again the original code can be seen by following the 
+The second of which is [https://github.com/helenqu/scone/blob/main/legacy/data_cuts.py](data_cuts.py). Again the original code can be seen by following the 
 hyperlink however since this has a larger amount of code on a few piece of my edits are 
-included here. This rest can be seen within this Google collab notebook. Above is 
+included here. This rest can be seen within this [https://colab.research.google.com/drive/168kuI2K3JW9dZl8bdToQi2DrlMQ96ujE#scrollTo=yC3WqsGrVUco](Google collab notebook). Above is 
 calculate_peakmjd function. This function along with the function Willow and I created 
 last week strive to achieve the same goal. However they do it slightly differently. The 
 only error I had to fix within the SCONE code is the formatting of the sn_data. The way 
@@ -120,7 +120,7 @@ performing its proper function.
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/107265822/179253362-ca1886a0-2ac3-4b15-a837-a9f7d3ea9bef.png">
 
-	Figure 1: The above figure shows the output of the slit_datafile function. To run this 
+Figure 1: The above figure shows the output of the slit_datafile function. To run this 
   function a string of path to the file that contains the light curve data and a string 
   of path to the file that contains the metadata must be passed. This functions splits 
   the data into three files. The number files can be changed by altering the 
@@ -132,7 +132,7 @@ performing its proper function.
   
   <img width="509" alt="image" src="https://user-images.githubusercontent.com/107265822/179253185-e990220d-7ba0-4e72-b5e2-f02e65a5eb57.png">
 
-	Figure 2: The above figure shows the output of the function calculate_peakmjd. To run this 
+Figure 2: The above figure shows the output of the function calculate_peakmjd. To run this 
   function an array of the metadata and an array of  light curve data must be passed. Above, 
   we can see that I only asked for the peak mjd for the supernova with the ID 730. Without that, 
   the function will print the mjd values for all the supernova. As we can see this code gave the 
