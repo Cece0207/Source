@@ -7,7 +7,7 @@ No papers were read this week.
 
 ### 1.2 Code Written
 
-           import pandas as pd
+          import pandas as pd
           import numpy as np
           import os
           import yaml
@@ -68,7 +68,7 @@ No papers were read this week.
               return len(lcdata_ids), new_metadata_paths, new_lcdata_paths 
     
 Upon working through the SCONE data, I have successfully run a few parts of the code. 
-First of which is [https://github.com/helenqu/scone/blob/main/legacy/split_data_files.py](split_data_files.py). The original code can be seen by following the 
+First of which is [split_data_files.py](https://github.com/helenqu/scone/blob/main/legacy/split_data_files.py). The original code can be seen by following the 
 hyperlink while my edits are above. The main change in the code is the use of argparse. 
 Within the notebook we were not able to use the argpase functions thus we had to find 
 workarounds. Thus, we created a function instead. Along with argpase, we originally 
@@ -94,9 +94,9 @@ The output of this function can be seen in Figure 1.
                           peak_mjd_calculated.append(np.sum(mjd * snrs) / np.sum(snrs))
                       return peak_mjd_calculated
             
-The second of which is [https://github.com/helenqu/scone/blob/main/legacy/data_cuts.py](data_cuts.py). Again the original code can be seen by following the 
+The second of which is [data_cuts.py](https://github.com/helenqu/scone/blob/main/legacy/data_cuts.py). Again the original code can be seen by following the 
 hyperlink however since this has a larger amount of code on a few piece of my edits are 
-included here. This rest can be seen within this [https://colab.research.google.com/drive/168kuI2K3JW9dZl8bdToQi2DrlMQ96ujE#scrollTo=yC3WqsGrVUco](Google collab notebook). Above is 
+included here. This rest can be seen within this [Google collab notebook](https://colab.research.google.com/drive/168kuI2K3JW9dZl8bdToQi2DrlMQ96ujE#scrollTo=yC3WqsGrVUco). Above is 
 calculate_peakmjd function. This function along with the function Willow and I created 
 last week strive to achieve the same goal. However they do it slightly differently. The 
 only error I had to fix within the SCONE code is the formatting of the sn_data. The way 
