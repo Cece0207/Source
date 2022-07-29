@@ -64,19 +64,27 @@ This week, many of the members of FASTLab went to the BOOM! conference. In prepa
 
 ## 2. Figures (at least 1 figure)
 
-Figure 1: <img width="284" alt="image" src="https://user-images.githubusercontent.com/107265822/181841656-bbf8b534-4ea2-4896-b5ac-a7910bf107d0.png">
+Figure 1: 
+
+<img width="284" alt="image" src="https://user-images.githubusercontent.com/107265822/181841656-bbf8b534-4ea2-4896-b5ac-a7910bf107d0.png">
 
 Here is the stacked DataFrame of the ELAsTiCC data set. There is a total of 40 objects for the data that I downloaded. Hence the 0 to 39 that label to outermost rows. Each object has numerous observations. The list of lists proved the information on the observations. The lists include information such as the mjd, passband, flux, and flux error to name a few.
 
-Figure 2:<img width="837" alt="image" src="https://user-images.githubusercontent.com/107265822/181841740-e25f51b8-feaf-4863-a1de-2bb5ff789cde.png">
+Figure 2:
+
+<img width="837" alt="image" src="https://user-images.githubusercontent.com/107265822/181841740-e25f51b8-feaf-4863-a1de-2bb5ff789cde.png">
 
 This is after breaking the list of list into individual columns for each value. But this only shows object 0 as I was having trouble completing this separation for each object at the same time.
 
-Figure 3: <img width="267" alt="image" src="https://user-images.githubusercontent.com/107265822/181841868-fefbe27d-0f1f-4a62-8a39-56df551661f8.png">
+Figure 3: 
+
+<img width="267" alt="image" src="https://user-images.githubusercontent.com/107265822/181841868-fefbe27d-0f1f-4a62-8a39-56df551661f8.png">
 
 This is a reorganized DataFrame of Figure 2. That now shows the MJD, passband, flux, and flux error for each observation of object 0.
 
-Figure 4:<img width="343" alt="image" src="https://user-images.githubusercontent.com/107265822/181841922-a5eac80c-b45a-44e2-b183-22367876973d.png">
+Figure 4:
+
+<img width="343" alt="image" src="https://user-images.githubusercontent.com/107265822/181841922-a5eac80c-b45a-44e2-b183-22367876973d.png">
 
 This shows a plotted version of the data from figure 3. In a similar manner to previous light curve scatter plots. The flux is plotted as a function of mjd with the flux error taken into account by the error bars on the plot.	
 
