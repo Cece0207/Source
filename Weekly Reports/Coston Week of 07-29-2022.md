@@ -14,14 +14,52 @@ With the difficulties of downloading pyCharm we have decided to move back to Goo
 
 First, we have to access the ELAsTiCC data set. With the help of Somayeh Khakpash, I was able to download the ELAsTiCC files into google drive. Above is the link to her original GitHub repo. However, since copying it over to a google collab notebook, I have made a few changes in order for it to run properly within the notebook. 
 
-Once, the data has been read in, it needs to be reformatted in order to run with the SCONE code that we have already worked on. The code above shows how I began to test the manipulation of the data. I first covered all of the data into a pandas DataFrame and stacked the data so that there was only one column, as seen in Figure 1. This column was a list of lists thus, we had to separate both the lists and the contents of each list. This was done by the following line of code and had an output that can be seen in Figure 2. 
+	lcvs = pd.DataFrame(data)
+	lcvs = lcvs.stack(level = -1)
+	lcvs = pd.DataFrame(lcvs)
+	lcvs.columns = ['test']
+	lcvs
+	
+Once, the data has been read in, it needs to be reformatted in order to run with the SCONE code that we have already worked on. The code above shows how I began to test the manipulation of the data. I first covered all of the data into a pandas DataFrame and stacked the data so that there was only one column, as seen in Figure 1. This column was a list of lists thus, we had to separate both the lists and the contents of each list. This was done by the code shown below  and had an output that can be seen in Figure 2. 
 
+	
+	df = pd.DataFrame([i for i in lcvs.loc[0]["test"][0]])
+	df	
+	
 To make the DataFrame easier to read and understand, I renamed and deleted unnecessary columns. The code and be seen below while the output can be seen in Figure 3.
-
+	titles = { 0:'MJD', 
+		  1: 'BAND',
+		  2: 'CCDNUM', 
+		  3: 'FIELD', 
+		  4: 'PHOTOFLAG', 
+		  5: 'PHOTPROB', 
+		  6: 'FLUXCAL', 
+		  7: 'FLUXCALERR', 
+		  8:'PSF_SIG1', 
+		  9: 'PSF_SIG2', 
+		  10:'PSF_RATIO', 
+		  11: 'SKY_SIG', 
+		  12: 'SKY_SIG_T', 
+		  13: 'RDNOISE', 
+		  14: 'ZEROPT', 
+		  15: 'ZEROPT_ERR', 
+		  16: 'GAIN', 
+		  17: 'XPIX', 
+		  18: 'YPIX', 
+		  19: 'SIM_FLUXCAL_HOSTERR', 
+		  20:'SIM_MAGOBS'}
+	df = df.rename(columns=titles)
+	test_lcvs = df.drop(['CCDNUM','FIELD','PHOTOFLAG', 'PHOTPROB', 'PSF_SIG1', 'PSF_SIG2', 'PSF_RATIO', 'SKY_SIG', 'SKY_SIG_T', 'RDNOISE', 'ZEROPT', 		'ZEROPT_ERR', 'GAIN', 'XPIX', 'YPIX', 'SIM_FLUXCAL_HOSTERR', 'SIM_MAGOBS'], axis =1)
+	test_lcvs  
+	
 Finally, I plotted the data to compare to previous light curves that I have plotted. Again, the code can be seen below while the output can be seen in Figure 4. The work I have done to get this is only for one section of the entire ELAsTiCC data. When trying to apply similar methods to the full data set, I ran into several errors hence I chose to take a smaller portion of the data and go step by step. 
 
+	test_lcvs.plot(x = 'MJD', y= 'FLUXCAL', kind = 'scatter', title = "Test of Plotting ELAsTiCC Light Curve", yerr = 'FLUXCALERR' )
+
+
 ### 1.3 Other (algorithm, discussion with experts, went to a conference)
-	This week, many of the members of FASTLab went to the BOOM! conference. In preparation for their talks, Willow Fox Fortino and Xiaolong Li presented their work to the group. Willow discussed low-resolution spectroscopy while Xiaolong gave two presentations one on unknown unknowns and the second on the detection of light echoes. This not only taught me more about their respective topics but also about what makes a good presentation. 
+	
+This week, many of the members of FASTLab went to the BOOM! conference. In preparation for their talks, Willow Fox Fortino and Xiaolong Li presented their work to the group. Willow discussed low-resolution spectroscopy while Xiaolong gave two presentations one on unknown unknowns and the second on the detection of light echoes. This not only taught me more about their respective topics but also about what makes a good presentation. 
 
 ## 2. Figures (at least 1 figure)
 
