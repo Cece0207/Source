@@ -27,6 +27,7 @@ Once, the data has been read in, it needs to be reformatted in order to run with
 	df	
 	
 To make the DataFrame easier to read and understand, I renamed and deleted unnecessary columns. The code and be seen below while the output can be seen in Figure 3.
+
 		titles = { 0:'MJD', 
 			  1: 'BAND',
 			  2: 'CCDNUM', 
