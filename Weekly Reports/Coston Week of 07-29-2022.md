@@ -27,31 +27,31 @@ Once, the data has been read in, it needs to be reformatted in order to run with
 	df	
 	
 To make the DataFrame easier to read and understand, I renamed and deleted unnecessary columns. The code and be seen below while the output can be seen in Figure 3.
-	titles = { 0:'MJD', 
-		  1: 'BAND',
-		  2: 'CCDNUM', 
-		  3: 'FIELD', 
-		  4: 'PHOTOFLAG', 
-		  5: 'PHOTPROB', 
-		  6: 'FLUXCAL', 
-		  7: 'FLUXCALERR', 
-		  8:'PSF_SIG1', 
-		  9: 'PSF_SIG2', 
-		  10:'PSF_RATIO', 
-		  11: 'SKY_SIG', 
-		  12: 'SKY_SIG_T', 
-		  13: 'RDNOISE', 
-		  14: 'ZEROPT', 
-		  15: 'ZEROPT_ERR', 
-		  16: 'GAIN', 
-		  17: 'XPIX', 
-		  18: 'YPIX', 
-		  19: 'SIM_FLUXCAL_HOSTERR', 
-		  20:'SIM_MAGOBS'}
-	df = df.rename(columns=titles)
-	test_lcvs = df.drop(['CCDNUM','FIELD','PHOTOFLAG', 'PHOTPROB', 'PSF_SIG1', 'PSF_SIG2', 'PSF_RATIO', 'SKY_SIG', 'SKY_SIG_T', 'RDNOISE', 'ZEROPT', 		'ZEROPT_ERR', 'GAIN', 'XPIX', 'YPIX', 'SIM_FLUXCAL_HOSTERR', 'SIM_MAGOBS'], axis =1)
-	test_lcvs  
-	
+		titles = { 0:'MJD', 
+			  1: 'BAND',
+			  2: 'CCDNUM', 
+			  3: 'FIELD', 
+			  4: 'PHOTOFLAG', 
+			  5: 'PHOTPROB', 
+			  6: 'FLUXCAL', 
+			  7: 'FLUXCALERR', 
+			  8:'PSF_SIG1', 
+			  9: 'PSF_SIG2', 
+			  10:'PSF_RATIO', 
+			  11: 'SKY_SIG', 
+			  12: 'SKY_SIG_T', 
+			  13: 'RDNOISE', 
+			  14: 'ZEROPT', 
+			  15: 'ZEROPT_ERR', 
+			  16: 'GAIN', 
+			  17: 'XPIX', 
+			  18: 'YPIX', 
+			  19: 'SIM_FLUXCAL_HOSTERR', 
+			  20:'SIM_MAGOBS'}
+		df = df.rename(columns=titles)
+		test_lcvs = df.drop(['CCDNUM','FIELD','PHOTOFLAG', 'PHOTPROB', 'PSF_SIG1', 'PSF_SIG2', 'PSF_RATIO', 'SKY_SIG', 'SKY_SIG_T', 'RDNOISE', 'ZEROPT', 		'ZEROPT_ERR', 'GAIN', 'XPIX', 'YPIX', 'SIM_FLUXCAL_HOSTERR', 'SIM_MAGOBS'], axis =1)
+		test_lcvs  
+
 Finally, I plotted the data to compare to previous light curves that I have plotted. Again, the code can be seen below while the output can be seen in Figure 4. The work I have done to get this is only for one section of the entire ELAsTiCC data. When trying to apply similar methods to the full data set, I ran into several errors hence I chose to take a smaller portion of the data and go step by step. 
 
 	test_lcvs.plot(x = 'MJD', y= 'FLUXCAL', kind = 'scatter', title = "Test of Plotting ELAsTiCC Light Curve", yerr = 'FLUXCALERR' )
